@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>COVID-19 TRACKER</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link rel="stylesheet" th:href="@{/css/Style.css}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <div class="body">
+        <h1> COVID-19 STATISTICS</h1>
+      
+      <h3> Date <p class="header"th:text="${dateC}" ></p></h3>
+    </div> 
+    <div class="stats">
+   
+    Active Cases <p class="header"th:text="${totalA}" ></p>
+    Confirmed Cases <p class="header"th:text="${totalC}" ></p>
+   Deaths  <p class="header"th:text="${totalD}" ></p>
+    Recoveries <p class="header"th:text="${totalR}" ></p>
+    
+    </div>
+  
+<div class="table1">
+
+<table class="styled-table">
+	<tr>
+		<td class="header">Provinces</td>
+		<th class="header" scope="col">LP</th>
+		<th class="header"scope="col">GP</th>
+		<th class="header"scope="col">NW</th>
+		<th class="header"scope="col">NE</th>
+		<th class="header" scope="col">FS</th>
+		<th class="header"scope="col">MP</th>
+		<th class="header"scope="col">KZN</th>
+		<th class="header"scope="col">WC</th>
+		<th class="header"scope="col">EC</th>
+	</tr>
+	<tr>
+		<th class="header" scope="row">Confirmed Cases</th>
+		<td th:text="${lpC}" ></td>
+		<td th:text="${gpC}" ></td>
+		<td th:text="${nwC}" ></td>
+		<td th:text="${ncC}" ></td>
+		<td th:text="${fsC}" ></td>
+		<td th:text="${mpC}" ></td>
+		<td th:text="${kznC}" ></td>
+		<td th:text="${wcC}" ></td>
+		<td th:text="${ecC}" ></td>
+		
+	</tr>
+	<tr>
+		<th class="header"scope="row">Deaths</th>
+		<td th:text="${lpD}" ></td>
+		<td th:text="${gpD}" ></td>
+		<td th:text="${nwD}" ></td>
+		<td th:text="${ncD}" ></td>
+		<td th:text="${fsD}" ></td>
+		<td th:text="${mpD}" ></td>
+		<td th:text="${kznD}" ></td>
+		<td th:text="${wcD}" ></td>
+		<td th:text="${ecD}" ></td>
+		
+	</tr>
+	<tr>
+		<th class="header"scope="row">Recoveries</th>
+		<td th:text="${lpR}" ></td>
+		<td th:text="${gpR}" ></td>
+		<td th:text="${nwR}" ></td>
+		<td th:text="${ncR}" ></td>
+		<td th:text="${fsR}" ></td>
+		<td th:text="${mpR}" ></td>
+		<td th:text="${kznR}" ></td>
+		<td th:text="${wcR}" ></td>
+		<td th:text="${ecR}" ></td>
+		
+	</tr>
+	<tr>
+		<th class="header"scope="row">Active Cases</th>
+		<td th:text="${lpA}" ></td>
+		<td th:text="${gpA}" ></td>
+		<td th:text="${nwA}" ></td>
+		<td th:text="${ncA}" ></td>
+		<td th:text="${fsA}" ></td>
+		<td th:text="${mpA}" ></td>
+		<td th:text="${kznA}" ></td>
+		<td th:text="${wcA}" ></td>
+		<td th:text="${ecA}" ></td>
+		
+	</tr>
+</table>
+
+</div>
+
+<div class="pic">  </div>
+<div class="nav">
+<div class="logo">SHERMAN 
+</div>
+   </div>
+<div class="footer">
+covid-19-tracker 2022 All Rights Reserved
+<br>
+Web-Site Designed by Sherman
+</div>
+
+  </body>
+
+</html>

@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family:'Courier New', Courier, monospace;
+}
+
+.pic{
+    background: url(pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(55%);
+    
+}
+
+.body{
+    color:#e2e2e2;
+    text-align: center;
+    width: 50vw;
+    position:absolute;
+    top: 10%;
+    left: -5%;
+    z-index:999999;
+    left: 25%;
+    
+}
+.body h1{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10vmin;
+}
+
+.line{
+    background:#2DD296 ;
+    height: 1vh;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.line2{
+    background:#2DD296 ;
+    height: 0.5vh;
+    width: 25%;
+
+    margin-top: 1.5%
+}
+.head{
+    margin-top: 1em;
+    margin-left: 0.5em;
+    
+}
+.table1{
+ 
+    border-radius: 10px;
+     background:#00000099;
+    height: 50vh;
+    position:absolute;
+    top: 35%;
+    left: 23%;
+    z-index:999999;
+    color: #cfcfcf;
+   font-weight: bolder;
+    margin-top: 1em;
+  
+}
+.stats{
+   
+    text-align:center;
+    background:#00000034 ;
+    border-radius: 10px;
+     width:15%;
+    position:absolute;
+    top: 43%;
+    left: 5%;
+    z-index:999999;
+    color: #c8c8c8;
+   font-weight: bolder;
+}
+.body h3{
+ font-weight:bolder;
+ }
+ 
+.footer{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.226);
+    width: 100vw;
+}
+.nav{
+position: absolute;
+top: 0;
+display: flex; 
+justify-content: space-between;
+width: 90%;
+margin: 0.3em 3em 3em 3em;
+}
+.logo{
+    
+    border: 2px solid #2DD296 ;
+    padding: 10px;
+    width: 6em;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+   }
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #ccbbff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color:#00000034;
+}
+.header{
+	color:#2DD296;
+}
